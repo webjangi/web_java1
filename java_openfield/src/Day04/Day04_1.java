@@ -31,14 +31,15 @@ public class Day04_1 {
 				
 				System.out.println("오름차순 : " + 정수1 + 정수2 + 정수3+ 정수4);
 		*/
-		
-		 System.out.println("아이디 :" );  String id = scanner.nextInt();
+		 System.out.println("[[[ 로그인 페이지 ]]]");
+		 System.out.println("아이디 :" );  String id = scanner.next();
 		 System.out.println("비밀번호 :"); int password = scanner.nextInt();
 		 //로그인 처리 
 		 
 		 if (id.equals("admin")) { //문자열 [클래스]
-			
-			 if(password == 1234 )  System.out.println("[성공] 로그인 성공");		
+			// String 클래스 비교 메소드 : 문자열.equals("비교대상") =>결과: true / false
+			//아이디가 동일한 경우
+			 if(password == 1234 ) System.out.println("[성공] 로그인 성공");		
 				 //비밀번호가 동일한경우				
 			 else System.out.println("[실패] 비밀번호 정보가 다릅니다.");				 
 			 
